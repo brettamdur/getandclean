@@ -1,12 +1,17 @@
-# Add general intro stuff here
+# BACKGROUND
+# This is the script that performs the steps to create the tidy data set from the source data,
+# as more fully described in the README.md file included in this repository.
 
+# Load required packages
+library(dplyr)
+library(reshape)
 
 # Step 1 -- Merge the training and the test sets to create one data set.
 	features <- read.table("features.txt", stringsAsFactors = FALSE)
 	activity.labels <- read.table("activity_labels.txt", stringsAsFactors = FALSE)
 	
 	#build a dataframe for the training set
-		x.train <- read.table("./train/X_train.txt") #fix these to grab from the right directory
+		x.train <- read.table("./train/X_train.txt") 
 		y.train <- read.table("./train/y_train.txt") 
 		subject.train <- read.table("./train/subject_train.txt")
 		traindf <- cbind(x.train,subject.train,y.train)
