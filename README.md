@@ -37,7 +37,7 @@ The assignment instructions ask students to use descriptive activity names to na
 The assignment insructions ask students to appropriately label the data set with descriptive variable names. To some degree, this script addresses this in Step 1.  When the script built the test and training data frames, it 
 named the last two variables that were created by adding columns from the y_(train/test) and subject_(train/test) files. I took the position that otherwise, all variables appear to have had descriptive names in their orignal form (meaning, as they appeared in the X_[train/test] files).  I took the position that any attempt to modify the given variable names would make them, in many cases, exceedinlgy long and complex, without adding much in the way of comprehensibility, and may even make them less accurate since I did not have a understanding of the domain of this project (accellerometer readings).  The codebook I am submitting explains the variable names in more detail.
 
-<h4>Step 5</h4>
+<h3>Step 5</h3>
 From the data set in step 4, the script creates a second, independent tidy data set with the average of each variable for each activity and each subject.  The script creates a long form of tidy data, by melting all variables except the identifying variables. The data is long, as described [here](https://class.coursera.org/getdata-031/forum/thread?thread_id=225). It was not clear that melting is really required, per the assignement instructions, which say that wide form is permitted here.  Without more information about the use to which this data is being put, we cannot determine whether this melting step is required to make this data tidy.
 
 <h1>5.  Instructions </h2>
