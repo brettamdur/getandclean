@@ -26,6 +26,9 @@ The original data consisted of several files, some containing data, and others c
  The script merges the training and the test sets to create one data set by building a dataframe from the training data, building a separate dataframe from the test data, and merging them into one dataframe.
  
  <h3>Step 2</h3>
+The script extract only the measurements on the mean and standard deviation for each measurement.  As noted in several discussion forums (see, for example, CITE), the instructions were not clear as to which variable names actually referred to mean or standard deviation.  I chose to simply subset the dataframe to those variables that contained either the string "mean" or "std", on the theory that being overinclusive in my selection would be safer than being underinclusive, if this assignment were being carried out in practice.
+
+<h3>Step 3</h3>
 
 <h1>5.  Instructions </h2>
 Run the file run_analysis.R, with the working directory in your R environment set to the "UCI HAR Dataset" directory that is unzipped from the zip of the source file, to generate the tidy data set described above.
