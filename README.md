@@ -41,7 +41,7 @@ named the last two variables that were created by adding columns from the y_(tra
 From the data set in step 4, the script creates a second, independent tidy data set with the average of each variable for each activity and each subject.  The script creates a long form of tidy data, by melting all variables except the identifying variables. The data is long, as described [here](https://class.coursera.org/getdata-031/forum/thread?thread_id=225). It was not clear that melting is really required, per the assignement instructions, which say that wide form is permitted here.  Without more information about the use to which this data is being put, we cannot determine whether this melting step is required to make this data tidy.
 
 <h1>5.  Instructions </h2>
-Run the file run_analysis.R, with the working directory in your R environment set to the "UCI HAR Dataset" directory that is unzipped from the zip of the source file, to generate the tidy data set described above.  The tidy data set is stored in a file called finalResult.txt that is writtent to the working directory.
+Run the file run_analysis.R, with the working directory in your R environment set to the "UCI HAR Dataset" directory that is unzipped from the zip of the source file, to generate the tidy data set described above.  The tidy data set is stored in a file called finalResult.txt that is written to the working directory.
 
 
 
