@@ -11,6 +11,8 @@ For this assignment, students were asked to write an R script that:
 > * 4. Appropriately labels the data set with descriptive variable names. 
 > * 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.<br>
 
+Reference: [https://class.coursera.org/getdata-031/human_grading/view/courses/975115/assessments/3/submissions](https://class.coursera.org/getdata-031/human_grading/view/courses/975115/assessments/3/submissions)<br>
+
 In addition, students were asked to submit a codebook, named CodeBook.md, as well as this README.md document.
 
 <h1>3.  Contents of this Repository</h1>
