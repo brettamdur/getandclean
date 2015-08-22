@@ -23,13 +23,13 @@ In addition, students were asked to submit a codebook, named CodeBook.md, as wel
 The original data consisted of several files, some containing data, and others containing descriptions of the data.  Each file is described in detail in the README.txt file of the source data.  Steps associated with completing this assignment were as follows:
 
 <h3>Step 1</h3>
- The script merges the training and the test sets to create one data set by building a dataframe from the training data, building a separate dataframe from the test data, and merging them into one dataframe.
+ The script merges the training and the test sets to create one data set by building a dataframe from the training data, and building a separate dataframe from the test data. Each of these two data frames combines the data from three files (the values from the measurments of the activities, the subject performing the activity, and the type of activity).  The script then merges the to dataframes into one dataframe.
  
  <h3>Step 2</h3>
-The script extract only the measurements on the mean and standard deviation for each measurement.  As noted in several discussion forums (see, for example, CITE), the instructions were not clear as to which variable names actually referred to mean or standard deviation.  I chose to simply subset the dataframe to those variables that contained either the string "mean" or "std", on the theory that being overinclusive in my selection would be safer than being underinclusive, if this assignment were being carried out in practice.
+The script extracts the variables related to mean and standard deviation for each measurement.  As noted in several discussion forums (see, for example, the the point made by class TA David Hood in the section on "what columns are measurements on the mean and standard deviation" found [here](http://test.com) ), the instructions were not clear as to which variable names actually referred to mean or standard deviation.  I chose to simply subset the dataframe to those variables that contained either the string "mean" or "std", on the theory that being overinclusive in my selection would be safer than being underinclusive, if this assignment were being carried out in practice.
 
 <h3>Step 3</h3>
-
+The assignment instructions ask students to use descriptive activity names to name the activities in the data set.  
 <h1>5.  Instructions </h2>
 Run the file run_analysis.R, with the working directory in your R environment set to the "UCI HAR Dataset" directory that is unzipped from the zip of the source file, to generate the tidy data set described above.
 
