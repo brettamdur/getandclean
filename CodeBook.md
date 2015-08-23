@@ -1,8 +1,9 @@
-**Code Book **
+**Code Book**
 --------------
 
 <h3>Introduction</h3>
-This document defines the variables used in the result set associated with the output of the run_analysis.R script.
+This document defines the variables used in the result set associated with the output of the run_analysis.R script.  See the README.md document for details on the nature of transformations
+of data from its original source form to this form.
 
 <h3>Variables</h3>
 There are four variables in the tidy data set that the script in this repository creates.  They are:
@@ -19,11 +20,11 @@ There are four variables in the tidy data set that the script in this repository
 	</tr>
 	<tr>
 		<td>Measurement</td>
-		<td>A particular feature of the activity being measured.</td>
+		<td>A particular feature of the Activity being measured.</td>
 	</tr>
 	<tr>
 		<td>Mean</td>
-		<td>The mean of the Measurement for the Subject/Activity pair.  In the original source data, the means for each measure were normalized and bounded within [-1,1].  For each Subject/Activity pair in this data set, the mean is the mean of the normalized source data. </td>
+		<td>The mean of the Measurement for the Subject/Activity pair.  In the original source data, the means for each measure were normalized and bounded within [-1,1].  For each Subject/Activity pair in this data set, the Mean is the mean of the normalized source data. </td>
 	</tr>
 </table>
 </blockquote>
