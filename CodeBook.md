@@ -41,6 +41,8 @@ The list below provides the unique values for the Measurement variable.  Each un
  - "mean()" at the end of the name refers to a mean measurement
  - "std()" at the end of the name refers to a standard deviation measurement
 
+UNIT OF MEASUREMENT: In the original source data, the means for each measure were normalized and bounded within [-1,1].
+
 Other information concerning the measurement values can be found in the features_info.txt file from the original materials.  NOTE: I elected to refrain from changing the names of these measurements from their original form, instead electing to provide the key above to allow readers to decode the meaning of the names.  The alternative -- changing the names to include more verbose meanings, such as changing "Acc" to "accelerometer" or "mag" to "magnitude" -- would seem to me to make the variable names unwieldy without any real improvement in understandability.  See the discussion on the Coursera forums [here](https://class.coursera.org/getdata-031/forum/thread?thread_id=203) for more on this issue.
 
 <blockquote>
