@@ -1,4 +1,4 @@
-# BACKGROUND
+# BACKGROUND 
 # This is the script that performs the steps to create the tidy data set from the source data,
 # as more fully described in the README.md file included in this repository.
 
@@ -31,7 +31,7 @@ library(reshape)
 		combineddf <- rbind(traindf,testdf)
 		
 # Step 2 - Extract only the measurements on the mean and standard deviation for each measurement.
-	combineddf <- combineddf[,grep("mean|std|Activity|Subject", names(combineddf), ignore.case = TRUE)]
+	combineddf <- combineddf[,grep("mean\\(\\)|std\\(\\)|Activity|Subject", names(combineddf), ignore.case = TRUE)]
 
 # Step 3 - Use descriptive activity names to name the activities in the data set
  	for(i in 1:length(combineddf$Activity)){
@@ -60,5 +60,6 @@ library(reshape)
 		combineddf.melted <- melt(combineddf, id = c("Subject", "Activity"))
 		combineddf.melted.g <- group_by(combineddf.melted, Subject, Activity, variable)
 		finalResult <- summarize(combineddf.melted.g, means=mean(value))
-		write.table(finalResult, file="finalResult.txt", row.names = FALSE)
+		names(finalResult)[3:4] <- c("Measurement", "Mean")
+		write.table(finalResult, file="finalResult.txt", row.names = FALSE, quote = FALSE)
 	
